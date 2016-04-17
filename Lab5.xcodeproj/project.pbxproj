@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E721E5DA1CC430B0004649EF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E721E5D91CC430B0004649EF /* main.c */; };
+		E721E6791CC4390A004649EF /* libmpi.12.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E721E5E31CC438F9004649EF /* libmpi.12.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,156 @@
 /* Begin PBXFileReference section */
 		E721E5D61CC430B0004649EF /* Lab5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab5; sourceTree = BUILT_PRODUCTS_DIR; };
 		E721E5D91CC430B0004649EF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		E721E5E11CC438F9004649EF /* libmca_common_sm.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmca_common_sm.4.dylib; sourceTree = "<group>"; };
+		E721E5E21CC438F9004649EF /* libmca_common_sm.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmca_common_sm.dylib; sourceTree = "<group>"; };
+		E721E5E31CC438F9004649EF /* libmpi.12.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpi.12.dylib; sourceTree = "<group>"; };
+		E721E5E41CC438F9004649EF /* libmpi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpi.dylib; sourceTree = "<group>"; };
+		E721E5E51CC438F9004649EF /* libmpi_cxx.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpi_cxx.1.dylib; sourceTree = "<group>"; };
+		E721E5E61CC438F9004649EF /* libmpi_cxx.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpi_cxx.dylib; sourceTree = "<group>"; };
+		E721E5E71CC438F9004649EF /* libmpi_mpifh.12.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpi_mpifh.12.dylib; sourceTree = "<group>"; };
+		E721E5E81CC438F9004649EF /* libmpi_mpifh.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpi_mpifh.dylib; sourceTree = "<group>"; };
+		E721E5E91CC438F9004649EF /* libmpi_usempi_ignore_tkr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmpi_usempi_ignore_tkr.a; sourceTree = "<group>"; };
+		E721E5EA1CC438F9004649EF /* libmpi_usempif08.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpi_usempif08.11.dylib; sourceTree = "<group>"; };
+		E721E5EB1CC438F9004649EF /* libmpi_usempif08.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpi_usempif08.dylib; sourceTree = "<group>"; };
+		E721E5EC1CC438F9004649EF /* libompitrace.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libompitrace.0.dylib; sourceTree = "<group>"; };
+		E721E5ED1CC438F9004649EF /* libompitrace.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libompitrace.dylib; sourceTree = "<group>"; };
+		E721E5EE1CC438F9004649EF /* libopen-pal.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libopen-pal.13.dylib"; sourceTree = "<group>"; };
+		E721E5EF1CC438F9004649EF /* libopen-pal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libopen-pal.dylib"; sourceTree = "<group>"; };
+		E721E5F01CC438F9004649EF /* libopen-rte.12.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libopen-rte.12.dylib"; sourceTree = "<group>"; };
+		E721E5F11CC438F9004649EF /* libopen-rte.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libopen-rte.dylib"; sourceTree = "<group>"; };
+		E721E5F21CC438F9004649EF /* libopen-trace-format.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libopen-trace-format.1.dylib"; sourceTree = "<group>"; };
+		E721E5F31CC438F9004649EF /* libopen-trace-format.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopen-trace-format.a"; sourceTree = "<group>"; };
+		E721E5F41CC438F9004649EF /* libopen-trace-format.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libopen-trace-format.dylib"; sourceTree = "<group>"; };
+		E721E5F51CC438F9004649EF /* libotfaux.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libotfaux.0.dylib; sourceTree = "<group>"; };
+		E721E5F61CC438F9004649EF /* libotfaux.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libotfaux.a; sourceTree = "<group>"; };
+		E721E5F71CC438F9004649EF /* libotfaux.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libotfaux.dylib; sourceTree = "<group>"; };
+		E721E5F81CC438F9004649EF /* libvt-hyb.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libvt-hyb.0.dylib"; sourceTree = "<group>"; };
+		E721E5F91CC438F9004649EF /* libvt-hyb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libvt-hyb.a"; sourceTree = "<group>"; };
+		E721E5FA1CC438F9004649EF /* libvt-hyb.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libvt-hyb.dylib"; sourceTree = "<group>"; };
+		E721E5FB1CC438F9004649EF /* libvt-java.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libvt-java.0.dylib"; sourceTree = "<group>"; };
+		E721E5FC1CC438F9004649EF /* libvt-java.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libvt-java.dylib"; sourceTree = "<group>"; };
+		E721E5FD1CC438F9004649EF /* libvt-java.jnilib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libvt-java.jnilib"; sourceTree = "<group>"; };
+		E721E5FE1CC438F9004649EF /* libvt-mpi-unify.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libvt-mpi-unify.0.dylib"; sourceTree = "<group>"; };
+		E721E5FF1CC438F9004649EF /* libvt-mpi-unify.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libvt-mpi-unify.a"; sourceTree = "<group>"; };
+		E721E6001CC438F9004649EF /* libvt-mpi-unify.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libvt-mpi-unify.dylib"; sourceTree = "<group>"; };
+		E721E6011CC438F9004649EF /* libvt-mpi.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libvt-mpi.0.dylib"; sourceTree = "<group>"; };
+		E721E6021CC438F9004649EF /* libvt-mpi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libvt-mpi.a"; sourceTree = "<group>"; };
+		E721E6031CC438F9004649EF /* libvt-mpi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libvt-mpi.dylib"; sourceTree = "<group>"; };
+		E721E6041CC438F9004649EF /* libvt-mt.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libvt-mt.0.dylib"; sourceTree = "<group>"; };
+		E721E6051CC438F9004649EF /* libvt-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libvt-mt.a"; sourceTree = "<group>"; };
+		E721E6061CC438F9004649EF /* libvt-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libvt-mt.dylib"; sourceTree = "<group>"; };
+		E721E6071CC438F9004649EF /* libvt.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libvt.0.dylib; sourceTree = "<group>"; };
+		E721E6081CC438F9004649EF /* libvt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libvt.a; sourceTree = "<group>"; };
+		E721E6091CC438F9004649EF /* libvt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libvt.dylib; sourceTree = "<group>"; };
+		E721E60B1CC438F9004649EF /* libompi_dbg_msgq.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libompi_dbg_msgq.so; sourceTree = "<group>"; };
+		E721E60C1CC438F9004649EF /* mca_allocator_basic.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_allocator_basic.so; sourceTree = "<group>"; };
+		E721E60D1CC438F9004649EF /* mca_allocator_bucket.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_allocator_bucket.so; sourceTree = "<group>"; };
+		E721E60E1CC438F9004649EF /* mca_bcol_basesmuma.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_bcol_basesmuma.so; sourceTree = "<group>"; };
+		E721E60F1CC438F9004649EF /* mca_bcol_ptpcoll.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_bcol_ptpcoll.so; sourceTree = "<group>"; };
+		E721E6101CC438F9004649EF /* mca_bml_r2.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_bml_r2.so; sourceTree = "<group>"; };
+		E721E6111CC438F9004649EF /* mca_btl_self.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_btl_self.so; sourceTree = "<group>"; };
+		E721E6121CC438F9004649EF /* mca_btl_sm.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_btl_sm.so; sourceTree = "<group>"; };
+		E721E6131CC438F9004649EF /* mca_btl_tcp.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_btl_tcp.so; sourceTree = "<group>"; };
+		E721E6141CC438F9004649EF /* mca_btl_vader.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_btl_vader.so; sourceTree = "<group>"; };
+		E721E6151CC438F9004649EF /* mca_coll_basic.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_coll_basic.so; sourceTree = "<group>"; };
+		E721E6161CC438F9004649EF /* mca_coll_hierarch.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_coll_hierarch.so; sourceTree = "<group>"; };
+		E721E6171CC438F9004649EF /* mca_coll_inter.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_coll_inter.so; sourceTree = "<group>"; };
+		E721E6181CC438F9004649EF /* mca_coll_libnbc.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_coll_libnbc.so; sourceTree = "<group>"; };
+		E721E6191CC438F9004649EF /* mca_coll_ml.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_coll_ml.so; sourceTree = "<group>"; };
+		E721E61A1CC438F9004649EF /* mca_coll_self.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_coll_self.so; sourceTree = "<group>"; };
+		E721E61B1CC438F9004649EF /* mca_coll_sm.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_coll_sm.so; sourceTree = "<group>"; };
+		E721E61C1CC438F9004649EF /* mca_coll_tuned.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_coll_tuned.so; sourceTree = "<group>"; };
+		E721E61D1CC438F9004649EF /* mca_compress_bzip.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_compress_bzip.so; sourceTree = "<group>"; };
+		E721E61E1CC438F9004649EF /* mca_compress_gzip.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_compress_gzip.so; sourceTree = "<group>"; };
+		E721E61F1CC438F9004649EF /* mca_crs_none.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_crs_none.so; sourceTree = "<group>"; };
+		E721E6201CC438F9004649EF /* mca_db_hash.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_db_hash.so; sourceTree = "<group>"; };
+		E721E6211CC438F9004649EF /* mca_db_print.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_db_print.so; sourceTree = "<group>"; };
+		E721E6221CC438F9004649EF /* mca_dfs_app.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_dfs_app.so; sourceTree = "<group>"; };
+		E721E6231CC438F9004649EF /* mca_dfs_orted.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_dfs_orted.so; sourceTree = "<group>"; };
+		E721E6241CC438F9004649EF /* mca_dfs_test.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_dfs_test.so; sourceTree = "<group>"; };
+		E721E6251CC438F9004649EF /* mca_dpm_orte.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_dpm_orte.so; sourceTree = "<group>"; };
+		E721E6261CC438F9004649EF /* mca_errmgr_default_app.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_errmgr_default_app.so; sourceTree = "<group>"; };
+		E721E6271CC438F9004649EF /* mca_errmgr_default_hnp.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_errmgr_default_hnp.so; sourceTree = "<group>"; };
+		E721E6281CC438F9004649EF /* mca_errmgr_default_orted.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_errmgr_default_orted.so; sourceTree = "<group>"; };
+		E721E6291CC438F9004649EF /* mca_errmgr_default_tool.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_errmgr_default_tool.so; sourceTree = "<group>"; };
+		E721E62A1CC438F9004649EF /* mca_ess_env.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_ess_env.so; sourceTree = "<group>"; };
+		E721E62B1CC438F9004649EF /* mca_ess_hnp.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_ess_hnp.so; sourceTree = "<group>"; };
+		E721E62C1CC438F9004649EF /* mca_ess_singleton.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_ess_singleton.so; sourceTree = "<group>"; };
+		E721E62D1CC438F9004649EF /* mca_ess_slurm.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_ess_slurm.so; sourceTree = "<group>"; };
+		E721E62E1CC438F9004649EF /* mca_ess_tool.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_ess_tool.so; sourceTree = "<group>"; };
+		E721E62F1CC438F9004649EF /* mca_fbtl_posix.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_fbtl_posix.so; sourceTree = "<group>"; };
+		E721E6301CC438F9004649EF /* mca_fcoll_dynamic.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_fcoll_dynamic.so; sourceTree = "<group>"; };
+		E721E6311CC438F9004649EF /* mca_fcoll_individual.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_fcoll_individual.so; sourceTree = "<group>"; };
+		E721E6321CC438F9004649EF /* mca_fcoll_static.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_fcoll_static.so; sourceTree = "<group>"; };
+		E721E6331CC438F9004649EF /* mca_fcoll_two_phase.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_fcoll_two_phase.so; sourceTree = "<group>"; };
+		E721E6341CC438F9004649EF /* mca_fcoll_ylib.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_fcoll_ylib.so; sourceTree = "<group>"; };
+		E721E6351CC438F9004649EF /* mca_filem_raw.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_filem_raw.so; sourceTree = "<group>"; };
+		E721E6361CC438F9004649EF /* mca_fs_ufs.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_fs_ufs.so; sourceTree = "<group>"; };
+		E721E6371CC438F9004649EF /* mca_grpcomm_bad.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_grpcomm_bad.so; sourceTree = "<group>"; };
+		E721E6381CC438F9004649EF /* mca_io_ompio.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_io_ompio.so; sourceTree = "<group>"; };
+		E721E6391CC438F9004649EF /* mca_io_romio.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_io_romio.so; sourceTree = "<group>"; };
+		E721E63A1CC438F9004649EF /* mca_iof_hnp.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_iof_hnp.so; sourceTree = "<group>"; };
+		E721E63B1CC438F9004649EF /* mca_iof_mr_hnp.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_iof_mr_hnp.so; sourceTree = "<group>"; };
+		E721E63C1CC438F9004649EF /* mca_iof_mr_orted.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_iof_mr_orted.so; sourceTree = "<group>"; };
+		E721E63D1CC438F9004649EF /* mca_iof_orted.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_iof_orted.so; sourceTree = "<group>"; };
+		E721E63E1CC438F9004649EF /* mca_iof_tool.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_iof_tool.so; sourceTree = "<group>"; };
+		E721E63F1CC438F9004649EF /* mca_mpool_grdma.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_mpool_grdma.so; sourceTree = "<group>"; };
+		E721E6401CC438F9004649EF /* mca_mpool_sm.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_mpool_sm.so; sourceTree = "<group>"; };
+		E721E6411CC438F9004649EF /* mca_odls_default.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_odls_default.so; sourceTree = "<group>"; };
+		E721E6421CC438F9004649EF /* mca_oob_tcp.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_oob_tcp.so; sourceTree = "<group>"; };
+		E721E6431CC438F9004649EF /* mca_osc_pt2pt.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_osc_pt2pt.so; sourceTree = "<group>"; };
+		E721E6441CC438F9004649EF /* mca_osc_sm.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_osc_sm.so; sourceTree = "<group>"; };
+		E721E6451CC438F9004649EF /* mca_plm_isolated.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_plm_isolated.so; sourceTree = "<group>"; };
+		E721E6461CC438F9004649EF /* mca_plm_rsh.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_plm_rsh.so; sourceTree = "<group>"; };
+		E721E6471CC438F9004649EF /* mca_plm_slurm.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_plm_slurm.so; sourceTree = "<group>"; };
+		E721E6481CC438F9004649EF /* mca_pml_bfo.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_pml_bfo.so; sourceTree = "<group>"; };
+		E721E6491CC438F9004649EF /* mca_pml_cm.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_pml_cm.so; sourceTree = "<group>"; };
+		E721E64A1CC438F9004649EF /* mca_pml_ob1.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_pml_ob1.so; sourceTree = "<group>"; };
+		E721E64B1CC438F9004649EF /* mca_pstat_test.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_pstat_test.so; sourceTree = "<group>"; };
+		E721E64C1CC438F9004649EF /* mca_pubsub_orte.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_pubsub_orte.so; sourceTree = "<group>"; };
+		E721E64D1CC438F9004649EF /* mca_ras_gridengine.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_ras_gridengine.so; sourceTree = "<group>"; };
+		E721E64E1CC438F9004649EF /* mca_ras_simulator.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_ras_simulator.so; sourceTree = "<group>"; };
+		E721E64F1CC438F9004649EF /* mca_ras_slurm.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_ras_slurm.so; sourceTree = "<group>"; };
+		E721E6501CC438F9004649EF /* mca_rcache_vma.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_rcache_vma.so; sourceTree = "<group>"; };
+		E721E6511CC438F9004649EF /* mca_rmaps_mindist.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_rmaps_mindist.so; sourceTree = "<group>"; };
+		E721E6521CC438F9004649EF /* mca_rmaps_ppr.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_rmaps_ppr.so; sourceTree = "<group>"; };
+		E721E6531CC438F9004649EF /* mca_rmaps_rank_file.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_rmaps_rank_file.so; sourceTree = "<group>"; };
+		E721E6541CC438F9004649EF /* mca_rmaps_resilient.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_rmaps_resilient.so; sourceTree = "<group>"; };
+		E721E6551CC438F9004649EF /* mca_rmaps_round_robin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_rmaps_round_robin.so; sourceTree = "<group>"; };
+		E721E6561CC438F9004649EF /* mca_rmaps_seq.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_rmaps_seq.so; sourceTree = "<group>"; };
+		E721E6571CC438F9004649EF /* mca_rmaps_staged.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_rmaps_staged.so; sourceTree = "<group>"; };
+		E721E6581CC438F9004649EF /* mca_rml_oob.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_rml_oob.so; sourceTree = "<group>"; };
+		E721E6591CC438F9004649EF /* mca_routed_binomial.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_routed_binomial.so; sourceTree = "<group>"; };
+		E721E65A1CC438F9004649EF /* mca_routed_debruijn.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_routed_debruijn.so; sourceTree = "<group>"; };
+		E721E65B1CC438F9004649EF /* mca_routed_direct.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_routed_direct.so; sourceTree = "<group>"; };
+		E721E65C1CC438F9004649EF /* mca_routed_radix.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_routed_radix.so; sourceTree = "<group>"; };
+		E721E65D1CC438F9004649EF /* mca_sbgp_basesmsocket.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_sbgp_basesmsocket.so; sourceTree = "<group>"; };
+		E721E65E1CC438F9004649EF /* mca_sbgp_basesmuma.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_sbgp_basesmuma.so; sourceTree = "<group>"; };
+		E721E65F1CC438F9004649EF /* mca_sbgp_p2p.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_sbgp_p2p.so; sourceTree = "<group>"; };
+		E721E6601CC438F9004649EF /* mca_sec_basic.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_sec_basic.so; sourceTree = "<group>"; };
+		E721E6611CC438F9004649EF /* mca_sharedfp_individual.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_sharedfp_individual.so; sourceTree = "<group>"; };
+		E721E6621CC438F9004649EF /* mca_sharedfp_lockedfile.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_sharedfp_lockedfile.so; sourceTree = "<group>"; };
+		E721E6631CC438F9004649EF /* mca_sharedfp_sm.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_sharedfp_sm.so; sourceTree = "<group>"; };
+		E721E6641CC438F9004649EF /* mca_shmem_mmap.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_shmem_mmap.so; sourceTree = "<group>"; };
+		E721E6651CC438F9004649EF /* mca_shmem_posix.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_shmem_posix.so; sourceTree = "<group>"; };
+		E721E6661CC438F9004649EF /* mca_shmem_sysv.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_shmem_sysv.so; sourceTree = "<group>"; };
+		E721E6671CC438F9004649EF /* mca_state_app.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_state_app.so; sourceTree = "<group>"; };
+		E721E6681CC438F9004649EF /* mca_state_dvm.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_state_dvm.so; sourceTree = "<group>"; };
+		E721E6691CC438F9004649EF /* mca_state_hnp.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_state_hnp.so; sourceTree = "<group>"; };
+		E721E66A1CC438F9004649EF /* mca_state_novm.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_state_novm.so; sourceTree = "<group>"; };
+		E721E66B1CC438F9004649EF /* mca_state_orted.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_state_orted.so; sourceTree = "<group>"; };
+		E721E66C1CC438F9004649EF /* mca_state_staged_hnp.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_state_staged_hnp.so; sourceTree = "<group>"; };
+		E721E66D1CC438F9004649EF /* mca_state_staged_orted.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_state_staged_orted.so; sourceTree = "<group>"; };
+		E721E66E1CC438F9004649EF /* mca_state_tool.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_state_tool.so; sourceTree = "<group>"; };
+		E721E66F1CC438F9004649EF /* mca_topo_basic.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_topo_basic.so; sourceTree = "<group>"; };
+		E721E6701CC438F9004649EF /* mca_vprotocol_pessimist.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mca_vprotocol_pessimist.so; sourceTree = "<group>"; };
+		E721E6721CC438F9004649EF /* ompi-c.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ompi-c.pc"; sourceTree = "<group>"; };
+		E721E6731CC438F9004649EF /* ompi-cxx.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ompi-cxx.pc"; sourceTree = "<group>"; };
+		E721E6741CC438F9004649EF /* ompi-f77.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ompi-f77.pc"; sourceTree = "<group>"; };
+		E721E6751CC438F9004649EF /* ompi-f90.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ompi-f90.pc"; sourceTree = "<group>"; };
+		E721E6761CC438F9004649EF /* ompi-fort.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ompi-fort.pc"; sourceTree = "<group>"; };
+		E721E6771CC438F9004649EF /* ompi.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = ompi.pc; sourceTree = "<group>"; };
+		E721E6781CC438F9004649EF /* orte.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = orte.pc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E721E6791CC4390A004649EF /* libmpi.12.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +193,7 @@
 		E721E5CD1CC430B0004649EF = {
 			isa = PBXGroup;
 			children = (
+				E721E5E01CC438F9004649EF /* lib */,
 				E721E5D81CC430B0004649EF /* Lab5 */,
 				E721E5D71CC430B0004649EF /* Products */,
 			);
@@ -60,6 +213,180 @@
 				E721E5D91CC430B0004649EF /* main.c */,
 			);
 			path = Lab5;
+			sourceTree = "<group>";
+		};
+		E721E5E01CC438F9004649EF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E721E5E11CC438F9004649EF /* libmca_common_sm.4.dylib */,
+				E721E5E21CC438F9004649EF /* libmca_common_sm.dylib */,
+				E721E5E31CC438F9004649EF /* libmpi.12.dylib */,
+				E721E5E41CC438F9004649EF /* libmpi.dylib */,
+				E721E5E51CC438F9004649EF /* libmpi_cxx.1.dylib */,
+				E721E5E61CC438F9004649EF /* libmpi_cxx.dylib */,
+				E721E5E71CC438F9004649EF /* libmpi_mpifh.12.dylib */,
+				E721E5E81CC438F9004649EF /* libmpi_mpifh.dylib */,
+				E721E5E91CC438F9004649EF /* libmpi_usempi_ignore_tkr.a */,
+				E721E5EA1CC438F9004649EF /* libmpi_usempif08.11.dylib */,
+				E721E5EB1CC438F9004649EF /* libmpi_usempif08.dylib */,
+				E721E5EC1CC438F9004649EF /* libompitrace.0.dylib */,
+				E721E5ED1CC438F9004649EF /* libompitrace.dylib */,
+				E721E5EE1CC438F9004649EF /* libopen-pal.13.dylib */,
+				E721E5EF1CC438F9004649EF /* libopen-pal.dylib */,
+				E721E5F01CC438F9004649EF /* libopen-rte.12.dylib */,
+				E721E5F11CC438F9004649EF /* libopen-rte.dylib */,
+				E721E5F21CC438F9004649EF /* libopen-trace-format.1.dylib */,
+				E721E5F31CC438F9004649EF /* libopen-trace-format.a */,
+				E721E5F41CC438F9004649EF /* libopen-trace-format.dylib */,
+				E721E5F51CC438F9004649EF /* libotfaux.0.dylib */,
+				E721E5F61CC438F9004649EF /* libotfaux.a */,
+				E721E5F71CC438F9004649EF /* libotfaux.dylib */,
+				E721E5F81CC438F9004649EF /* libvt-hyb.0.dylib */,
+				E721E5F91CC438F9004649EF /* libvt-hyb.a */,
+				E721E5FA1CC438F9004649EF /* libvt-hyb.dylib */,
+				E721E5FB1CC438F9004649EF /* libvt-java.0.dylib */,
+				E721E5FC1CC438F9004649EF /* libvt-java.dylib */,
+				E721E5FD1CC438F9004649EF /* libvt-java.jnilib */,
+				E721E5FE1CC438F9004649EF /* libvt-mpi-unify.0.dylib */,
+				E721E5FF1CC438F9004649EF /* libvt-mpi-unify.a */,
+				E721E6001CC438F9004649EF /* libvt-mpi-unify.dylib */,
+				E721E6011CC438F9004649EF /* libvt-mpi.0.dylib */,
+				E721E6021CC438F9004649EF /* libvt-mpi.a */,
+				E721E6031CC438F9004649EF /* libvt-mpi.dylib */,
+				E721E6041CC438F9004649EF /* libvt-mt.0.dylib */,
+				E721E6051CC438F9004649EF /* libvt-mt.a */,
+				E721E6061CC438F9004649EF /* libvt-mt.dylib */,
+				E721E6071CC438F9004649EF /* libvt.0.dylib */,
+				E721E6081CC438F9004649EF /* libvt.a */,
+				E721E6091CC438F9004649EF /* libvt.dylib */,
+				E721E60A1CC438F9004649EF /* openmpi */,
+				E721E6711CC438F9004649EF /* pkgconfig */,
+			);
+			name = lib;
+			path = "../../../../../usr/local/Cellar/open-mpi/1.10.1_1/lib";
+			sourceTree = "<group>";
+		};
+		E721E60A1CC438F9004649EF /* openmpi */ = {
+			isa = PBXGroup;
+			children = (
+				E721E60B1CC438F9004649EF /* libompi_dbg_msgq.so */,
+				E721E60C1CC438F9004649EF /* mca_allocator_basic.so */,
+				E721E60D1CC438F9004649EF /* mca_allocator_bucket.so */,
+				E721E60E1CC438F9004649EF /* mca_bcol_basesmuma.so */,
+				E721E60F1CC438F9004649EF /* mca_bcol_ptpcoll.so */,
+				E721E6101CC438F9004649EF /* mca_bml_r2.so */,
+				E721E6111CC438F9004649EF /* mca_btl_self.so */,
+				E721E6121CC438F9004649EF /* mca_btl_sm.so */,
+				E721E6131CC438F9004649EF /* mca_btl_tcp.so */,
+				E721E6141CC438F9004649EF /* mca_btl_vader.so */,
+				E721E6151CC438F9004649EF /* mca_coll_basic.so */,
+				E721E6161CC438F9004649EF /* mca_coll_hierarch.so */,
+				E721E6171CC438F9004649EF /* mca_coll_inter.so */,
+				E721E6181CC438F9004649EF /* mca_coll_libnbc.so */,
+				E721E6191CC438F9004649EF /* mca_coll_ml.so */,
+				E721E61A1CC438F9004649EF /* mca_coll_self.so */,
+				E721E61B1CC438F9004649EF /* mca_coll_sm.so */,
+				E721E61C1CC438F9004649EF /* mca_coll_tuned.so */,
+				E721E61D1CC438F9004649EF /* mca_compress_bzip.so */,
+				E721E61E1CC438F9004649EF /* mca_compress_gzip.so */,
+				E721E61F1CC438F9004649EF /* mca_crs_none.so */,
+				E721E6201CC438F9004649EF /* mca_db_hash.so */,
+				E721E6211CC438F9004649EF /* mca_db_print.so */,
+				E721E6221CC438F9004649EF /* mca_dfs_app.so */,
+				E721E6231CC438F9004649EF /* mca_dfs_orted.so */,
+				E721E6241CC438F9004649EF /* mca_dfs_test.so */,
+				E721E6251CC438F9004649EF /* mca_dpm_orte.so */,
+				E721E6261CC438F9004649EF /* mca_errmgr_default_app.so */,
+				E721E6271CC438F9004649EF /* mca_errmgr_default_hnp.so */,
+				E721E6281CC438F9004649EF /* mca_errmgr_default_orted.so */,
+				E721E6291CC438F9004649EF /* mca_errmgr_default_tool.so */,
+				E721E62A1CC438F9004649EF /* mca_ess_env.so */,
+				E721E62B1CC438F9004649EF /* mca_ess_hnp.so */,
+				E721E62C1CC438F9004649EF /* mca_ess_singleton.so */,
+				E721E62D1CC438F9004649EF /* mca_ess_slurm.so */,
+				E721E62E1CC438F9004649EF /* mca_ess_tool.so */,
+				E721E62F1CC438F9004649EF /* mca_fbtl_posix.so */,
+				E721E6301CC438F9004649EF /* mca_fcoll_dynamic.so */,
+				E721E6311CC438F9004649EF /* mca_fcoll_individual.so */,
+				E721E6321CC438F9004649EF /* mca_fcoll_static.so */,
+				E721E6331CC438F9004649EF /* mca_fcoll_two_phase.so */,
+				E721E6341CC438F9004649EF /* mca_fcoll_ylib.so */,
+				E721E6351CC438F9004649EF /* mca_filem_raw.so */,
+				E721E6361CC438F9004649EF /* mca_fs_ufs.so */,
+				E721E6371CC438F9004649EF /* mca_grpcomm_bad.so */,
+				E721E6381CC438F9004649EF /* mca_io_ompio.so */,
+				E721E6391CC438F9004649EF /* mca_io_romio.so */,
+				E721E63A1CC438F9004649EF /* mca_iof_hnp.so */,
+				E721E63B1CC438F9004649EF /* mca_iof_mr_hnp.so */,
+				E721E63C1CC438F9004649EF /* mca_iof_mr_orted.so */,
+				E721E63D1CC438F9004649EF /* mca_iof_orted.so */,
+				E721E63E1CC438F9004649EF /* mca_iof_tool.so */,
+				E721E63F1CC438F9004649EF /* mca_mpool_grdma.so */,
+				E721E6401CC438F9004649EF /* mca_mpool_sm.so */,
+				E721E6411CC438F9004649EF /* mca_odls_default.so */,
+				E721E6421CC438F9004649EF /* mca_oob_tcp.so */,
+				E721E6431CC438F9004649EF /* mca_osc_pt2pt.so */,
+				E721E6441CC438F9004649EF /* mca_osc_sm.so */,
+				E721E6451CC438F9004649EF /* mca_plm_isolated.so */,
+				E721E6461CC438F9004649EF /* mca_plm_rsh.so */,
+				E721E6471CC438F9004649EF /* mca_plm_slurm.so */,
+				E721E6481CC438F9004649EF /* mca_pml_bfo.so */,
+				E721E6491CC438F9004649EF /* mca_pml_cm.so */,
+				E721E64A1CC438F9004649EF /* mca_pml_ob1.so */,
+				E721E64B1CC438F9004649EF /* mca_pstat_test.so */,
+				E721E64C1CC438F9004649EF /* mca_pubsub_orte.so */,
+				E721E64D1CC438F9004649EF /* mca_ras_gridengine.so */,
+				E721E64E1CC438F9004649EF /* mca_ras_simulator.so */,
+				E721E64F1CC438F9004649EF /* mca_ras_slurm.so */,
+				E721E6501CC438F9004649EF /* mca_rcache_vma.so */,
+				E721E6511CC438F9004649EF /* mca_rmaps_mindist.so */,
+				E721E6521CC438F9004649EF /* mca_rmaps_ppr.so */,
+				E721E6531CC438F9004649EF /* mca_rmaps_rank_file.so */,
+				E721E6541CC438F9004649EF /* mca_rmaps_resilient.so */,
+				E721E6551CC438F9004649EF /* mca_rmaps_round_robin.so */,
+				E721E6561CC438F9004649EF /* mca_rmaps_seq.so */,
+				E721E6571CC438F9004649EF /* mca_rmaps_staged.so */,
+				E721E6581CC438F9004649EF /* mca_rml_oob.so */,
+				E721E6591CC438F9004649EF /* mca_routed_binomial.so */,
+				E721E65A1CC438F9004649EF /* mca_routed_debruijn.so */,
+				E721E65B1CC438F9004649EF /* mca_routed_direct.so */,
+				E721E65C1CC438F9004649EF /* mca_routed_radix.so */,
+				E721E65D1CC438F9004649EF /* mca_sbgp_basesmsocket.so */,
+				E721E65E1CC438F9004649EF /* mca_sbgp_basesmuma.so */,
+				E721E65F1CC438F9004649EF /* mca_sbgp_p2p.so */,
+				E721E6601CC438F9004649EF /* mca_sec_basic.so */,
+				E721E6611CC438F9004649EF /* mca_sharedfp_individual.so */,
+				E721E6621CC438F9004649EF /* mca_sharedfp_lockedfile.so */,
+				E721E6631CC438F9004649EF /* mca_sharedfp_sm.so */,
+				E721E6641CC438F9004649EF /* mca_shmem_mmap.so */,
+				E721E6651CC438F9004649EF /* mca_shmem_posix.so */,
+				E721E6661CC438F9004649EF /* mca_shmem_sysv.so */,
+				E721E6671CC438F9004649EF /* mca_state_app.so */,
+				E721E6681CC438F9004649EF /* mca_state_dvm.so */,
+				E721E6691CC438F9004649EF /* mca_state_hnp.so */,
+				E721E66A1CC438F9004649EF /* mca_state_novm.so */,
+				E721E66B1CC438F9004649EF /* mca_state_orted.so */,
+				E721E66C1CC438F9004649EF /* mca_state_staged_hnp.so */,
+				E721E66D1CC438F9004649EF /* mca_state_staged_orted.so */,
+				E721E66E1CC438F9004649EF /* mca_state_tool.so */,
+				E721E66F1CC438F9004649EF /* mca_topo_basic.so */,
+				E721E6701CC438F9004649EF /* mca_vprotocol_pessimist.so */,
+			);
+			path = openmpi;
+			sourceTree = "<group>";
+		};
+		E721E6711CC438F9004649EF /* pkgconfig */ = {
+			isa = PBXGroup;
+			children = (
+				E721E6721CC438F9004649EF /* ompi-c.pc */,
+				E721E6731CC438F9004649EF /* ompi-cxx.pc */,
+				E721E6741CC438F9004649EF /* ompi-f77.pc */,
+				E721E6751CC438F9004649EF /* ompi-f90.pc */,
+				E721E6761CC438F9004649EF /* ompi-fort.pc */,
+				E721E6771CC438F9004649EF /* ompi.pc */,
+				E721E6781CC438F9004649EF /* orte.pc */,
+			);
+			path = pkgconfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/open-mpi/1.10.1_1/include";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -200,6 +528,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/open-mpi/1.10.1_1/include";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -209,6 +538,10 @@
 		E721E5DE1CC430B0004649EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/usr/local/Cellar/open-mpi/1.10.1_1/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +549,10 @@
 		E721E5DF1CC430B0004649EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/usr/local/Cellar/open-mpi/1.10.1_1/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
