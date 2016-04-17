@@ -28,62 +28,64 @@ int main(int argc, char * argv[]) {
 			buf512 = (double*)malloc(512 * sizeof(double));
 			buf1024 = (double*)malloc(1024 * sizeof(double));
 			buf2048 = (double*)malloc(2048 * sizeof(double));
-			for (int i = 0; i < iterations; i++) {
+			int i;
+			for (i = 0; i < iterations; i++) {
 				MPI_Send(&buf32, 32, MPI_DOUBLE, 1, 32, MPI_COMM_WORLD);
 				MPI_Recv(&buf32, 32, MPI_DOUBLE, 1, 32, MPI_COMM_WORLD, &status);
 				MPI_Send(&buf32, 32, MPI_DOUBLE, 1, 32, MPI_COMM_WORLD);
 				MPI_Recv(&buf32, 32, MPI_DOUBLE, 1, 32, MPI_COMM_WORLD, &status);
 			}
-			for (int i = 0; i < iterations; i++) {
+			for (i = 0; i < iterations; i++) {
 				MPI_Send(&buf256, 256, MPI_DOUBLE, 1, 256, MPI_COMM_WORLD);
 				MPI_Recv(&buf256, 256, MPI_DOUBLE, 1, 256, MPI_COMM_WORLD, &status);
 				MPI_Send(&buf256, 256, MPI_DOUBLE, 1, 256, MPI_COMM_WORLD);
 				MPI_Recv(&buf256, 256, MPI_DOUBLE, 1, 256, MPI_COMM_WORLD, &status);
 			}
-			for (int i = 0; i < iterations; i++) {
+			for (i = 0; i < iterations; i++) {
 				MPI_Send(&buf512, 512, MPI_DOUBLE, 1, 512, MPI_COMM_WORLD);
 				MPI_Recv(&buf512, 512, MPI_DOUBLE, 1, 512, MPI_COMM_WORLD, &status);
 				MPI_Send(&buf512, 512, MPI_DOUBLE, 1, 512, MPI_COMM_WORLD);
 				MPI_Recv(&buf512, 512, MPI_DOUBLE, 1, 512, MPI_COMM_WORLD, &status);
 			}
-			for (int i = 0; i < iterations; i++) {
+			for (i = 0; i < iterations; i++) {
 				MPI_Send(&buf1024, 1024, MPI_DOUBLE, 1, 1024, MPI_COMM_WORLD);
 				MPI_Recv(&buf1024, 1024, MPI_DOUBLE, 1, 1024, MPI_COMM_WORLD, &status);
 				MPI_Send(&buf1024, 1024, MPI_DOUBLE, 1, 1024, MPI_COMM_WORLD);
 				MPI_Recv(&buf1024, 1024, MPI_DOUBLE, 1, 1024, MPI_COMM_WORLD, &status);
 			}
-			for (int i = 0; i < iterations; i++) {
+			for (i = 0; i < iterations; i++) {
 				MPI_Send(&buf2048, 2048, MPI_DOUBLE, 1, 0, MPI_COMM_WORLD);
 				MPI_Recv(&buf2048, 2048, MPI_DOUBLE, 1, 0, MPI_COMM_WORLD, &status);
 				MPI_Send(&buf2048, 2048, MPI_DOUBLE, 1, 0, MPI_COMM_WORLD);
 				MPI_Recv(&buf2048, 2048, MPI_DOUBLE, 1, 0, MPI_COMM_WORLD, &status);
 			}
 		} else if (rank == 1) {
-			for (int i = 0; i < iterations; i++) {
+			int i;
+			for (i = 0; i < iterations; i++) {
 				MPI_Recv(&buf32, 32, MPI_DOUBLE, 0, 32, MPI_COMM_WORLD, &status);
 				MPI_Send(&buf32, 32, MPI_DOUBLE, 0, 32, MPI_COMM_WORLD);
 				MPI_Recv(&buf32, 32, MPI_DOUBLE, 0, 32, MPI_COMM_WORLD, &status);
 				MPI_Send(&buf32, 32, MPI_DOUBLE, 0, 32, MPI_COMM_WORLD);
 			}
-			for (int i = 0; i < iterations; i++) {
+			for (i = 0; i < iterations; i++) {
 				MPI_Recv(&buf256, 256, MPI_DOUBLE, 0, 256, MPI_COMM_WORLD, &status);
 				MPI_Send(&buf256, 256, MPI_DOUBLE, 0, 256, MPI_COMM_WORLD);
 				MPI_Recv(&buf256, 256, MPI_DOUBLE, 0, 256, MPI_COMM_WORLD, &status);
 				MPI_Send(&buf256, 256, MPI_DOUBLE, 0, 256, MPI_COMM_WORLD);
 			}
-			for (int i = 0; i < iterations; i++) {
+			for (i = 0; i < iterations; i++) {
 				MPI_Recv(&buf512, 512, MPI_DOUBLE, 0, 512, MPI_COMM_WORLD, &status);
 				MPI_Send(&buf512, 512, MPI_DOUBLE, 0, 512, MPI_COMM_WORLD);
 				MPI_Recv(&buf512, 512, MPI_DOUBLE, 0, 512, MPI_COMM_WORLD, &status);
 				MPI_Send(&buf512, 512, MPI_DOUBLE, 0, 512, MPI_COMM_WORLD);
 			}
-			for (int i = 0; i < iterations; i++) {
+			for (i = 0; i < iterations; i++) {
 				MPI_Recv(&buf1024, 1024, MPI_DOUBLE, 0, 1024, MPI_COMM_WORLD, &status);
 				MPI_Send(&buf1024, 1024, MPI_DOUBLE, 0, 1024, MPI_COMM_WORLD);
 				MPI_Recv(&buf1024, 1024, MPI_DOUBLE, 0, 1024, MPI_COMM_WORLD, &status);
 				MPI_Send(&buf1024, 1024, MPI_DOUBLE, 0, 1024, MPI_COMM_WORLD);
 			}
-			for (int i = 0; i < iterations; i++) {
+			for (i = 0; i < iterations; i++) {
 				MPI_Recv(&buf2048, 2048, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD, &status);
 				MPI_Send(&buf2048, 2048, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD);
 				MPI_Recv(&buf2048, 2048, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD, &status);
