@@ -9,93 +9,126 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <mpi.h>
+#include <time.h>
+
+#define ITERATIONS 1000000
 
 int main(int argc, char * argv[]) {
-	if (argc == 2) {
-		int rank;
-		int iterations = atoi(argv[1]);
-		double *buf32;
-		double *buf256;
-		double *buf512;
-		double *buf1024;
-		double *buf2048;
-		MPI_Status status;
-		MPI_Init(&argc, &argv);
-		MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-		if (rank == 0) {
-			buf32 = (double*)malloc(32 * sizeof(double));
-			buf256 = (double*)malloc(256 * sizeof(double));
-			buf512 = (double*)malloc(512 * sizeof(double));
-			buf1024 = (double*)malloc(1024 * sizeof(double));
-			buf2048 = (double*)malloc(2048 * sizeof(double));
-			int i;
-			for (i = 0; i < iterations; i++) {
-				MPI_Send(&buf32, 32, MPI_DOUBLE, 1, 32, MPI_COMM_WORLD);
-				MPI_Recv(&buf32, 32, MPI_DOUBLE, 1, 32, MPI_COMM_WORLD, &status);
-				MPI_Send(&buf32, 32, MPI_DOUBLE, 1, 32, MPI_COMM_WORLD);
-				MPI_Recv(&buf32, 32, MPI_DOUBLE, 1, 32, MPI_COMM_WORLD, &status);
-			}
-			for (i = 0; i < iterations; i++) {
-				MPI_Send(&buf256, 256, MPI_DOUBLE, 1, 256, MPI_COMM_WORLD);
-				MPI_Recv(&buf256, 256, MPI_DOUBLE, 1, 256, MPI_COMM_WORLD, &status);
-				MPI_Send(&buf256, 256, MPI_DOUBLE, 1, 256, MPI_COMM_WORLD);
-				MPI_Recv(&buf256, 256, MPI_DOUBLE, 1, 256, MPI_COMM_WORLD, &status);
-			}
-			for (i = 0; i < iterations; i++) {
-				MPI_Send(&buf512, 512, MPI_DOUBLE, 1, 512, MPI_COMM_WORLD);
-				MPI_Recv(&buf512, 512, MPI_DOUBLE, 1, 512, MPI_COMM_WORLD, &status);
-				MPI_Send(&buf512, 512, MPI_DOUBLE, 1, 512, MPI_COMM_WORLD);
-				MPI_Recv(&buf512, 512, MPI_DOUBLE, 1, 512, MPI_COMM_WORLD, &status);
-			}
-			for (i = 0; i < iterations; i++) {
-				MPI_Send(&buf1024, 1024, MPI_DOUBLE, 1, 1024, MPI_COMM_WORLD);
-				MPI_Recv(&buf1024, 1024, MPI_DOUBLE, 1, 1024, MPI_COMM_WORLD, &status);
-				MPI_Send(&buf1024, 1024, MPI_DOUBLE, 1, 1024, MPI_COMM_WORLD);
-				MPI_Recv(&buf1024, 1024, MPI_DOUBLE, 1, 1024, MPI_COMM_WORLD, &status);
-			}
-			for (i = 0; i < iterations; i++) {
-				MPI_Send(&buf2048, 2048, MPI_DOUBLE, 1, 0, MPI_COMM_WORLD);
-				MPI_Recv(&buf2048, 2048, MPI_DOUBLE, 1, 0, MPI_COMM_WORLD, &status);
-				MPI_Send(&buf2048, 2048, MPI_DOUBLE, 1, 0, MPI_COMM_WORLD);
-				MPI_Recv(&buf2048, 2048, MPI_DOUBLE, 1, 0, MPI_COMM_WORLD, &status);
-			}
-		} else if (rank == 1) {
-			int i;
-			for (i = 0; i < iterations; i++) {
-				MPI_Recv(&buf32, 32, MPI_DOUBLE, 0, 32, MPI_COMM_WORLD, &status);
-				MPI_Send(&buf32, 32, MPI_DOUBLE, 0, 32, MPI_COMM_WORLD);
-				MPI_Recv(&buf32, 32, MPI_DOUBLE, 0, 32, MPI_COMM_WORLD, &status);
-				MPI_Send(&buf32, 32, MPI_DOUBLE, 0, 32, MPI_COMM_WORLD);
-			}
-			for (i = 0; i < iterations; i++) {
-				MPI_Recv(&buf256, 256, MPI_DOUBLE, 0, 256, MPI_COMM_WORLD, &status);
-				MPI_Send(&buf256, 256, MPI_DOUBLE, 0, 256, MPI_COMM_WORLD);
-				MPI_Recv(&buf256, 256, MPI_DOUBLE, 0, 256, MPI_COMM_WORLD, &status);
-				MPI_Send(&buf256, 256, MPI_DOUBLE, 0, 256, MPI_COMM_WORLD);
-			}
-			for (i = 0; i < iterations; i++) {
-				MPI_Recv(&buf512, 512, MPI_DOUBLE, 0, 512, MPI_COMM_WORLD, &status);
-				MPI_Send(&buf512, 512, MPI_DOUBLE, 0, 512, MPI_COMM_WORLD);
-				MPI_Recv(&buf512, 512, MPI_DOUBLE, 0, 512, MPI_COMM_WORLD, &status);
-				MPI_Send(&buf512, 512, MPI_DOUBLE, 0, 512, MPI_COMM_WORLD);
-			}
-			for (i = 0; i < iterations; i++) {
-				MPI_Recv(&buf1024, 1024, MPI_DOUBLE, 0, 1024, MPI_COMM_WORLD, &status);
-				MPI_Send(&buf1024, 1024, MPI_DOUBLE, 0, 1024, MPI_COMM_WORLD);
-				MPI_Recv(&buf1024, 1024, MPI_DOUBLE, 0, 1024, MPI_COMM_WORLD, &status);
-				MPI_Send(&buf1024, 1024, MPI_DOUBLE, 0, 1024, MPI_COMM_WORLD);
-			}
-			for (i = 0; i < iterations; i++) {
-				MPI_Recv(&buf2048, 2048, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD, &status);
-				MPI_Send(&buf2048, 2048, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD);
-				MPI_Recv(&buf2048, 2048, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD, &status);
-				MPI_Send(&buf2048, 2048, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD);
-			}
+	int rank, i;
+	double *buf;
+	double start32, dur32, start256, dur256, start512, dur512, start1024, dur1024, start2048, dur2048;
+	double bandwidth32, bandwidth256, bandwidth512, bandwidth1024, bandwidth2048;
+	MPI_Status status;
+	MPI_Init(&argc, &argv);
+	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+	if (rank == 0) {
+		// Process 0
+		buf = (double*)malloc(32 * sizeof(double));
+		MPI_Barrier(MPI_COMM_WORLD);
+		start32 = MPI_Wtime();
+		for (i = 0; i < ITERATIONS; i++) {
+			MPI_Send(buf, 32, MPI_DOUBLE, 1, 32, MPI_COMM_WORLD);
+			MPI_Recv(buf, 32, MPI_DOUBLE, 1, 32, MPI_COMM_WORLD, &status);
+			MPI_Send(buf, 32, MPI_DOUBLE, 1, 32, MPI_COMM_WORLD);
+			MPI_Recv(buf, 32, MPI_DOUBLE, 1, 32, MPI_COMM_WORLD, &status);
 		}
-		MPI_Finalize();
-		return 0;
-	} else {
-		printf("Usage: mpirun -np [np] a.out [iterations]\n");
-		return -1;
+		dur32 = MPI_Wtime() - start32;
+		bandwidth32 = 4  * sizeof(double) * 32 / dur32 ;
+		printf("Buffer size 32 bandwidth: %lf MB/s\n", bandwidth32);
+		buf = (double*)malloc(256 * sizeof(double));
+		MPI_Barrier(MPI_COMM_WORLD);
+		start256 = MPI_Wtime();
+		for (i = 0; i < ITERATIONS; i++) {
+			MPI_Send(buf, 256, MPI_DOUBLE, 1, 256, MPI_COMM_WORLD);
+			MPI_Recv(buf, 256, MPI_DOUBLE, 1, 256, MPI_COMM_WORLD, &status);
+			MPI_Send(buf, 256, MPI_DOUBLE, 1, 256, MPI_COMM_WORLD);
+			MPI_Recv(buf, 256, MPI_DOUBLE, 1, 256, MPI_COMM_WORLD, &status);
+		}
+		dur256 = MPI_Wtime() - start256;
+		bandwidth256 = 4 * sizeof(double) * 256 / dur256;
+		printf("Buffer size 256 bandwidth: %lf MB/s\n", bandwidth256);
+		buf = (double*)malloc(512 * sizeof(double));
+		MPI_Barrier(MPI_COMM_WORLD);
+		start512 = MPI_Wtime();
+		for (i = 0; i < ITERATIONS; i++) {
+			MPI_Send(buf, 512, MPI_DOUBLE, 1, 512, MPI_COMM_WORLD);
+			MPI_Recv(buf, 512, MPI_DOUBLE, 1, 512, MPI_COMM_WORLD, &status);
+			MPI_Send(buf, 512, MPI_DOUBLE, 1, 512, MPI_COMM_WORLD);
+			MPI_Recv(buf, 512, MPI_DOUBLE, 1, 512, MPI_COMM_WORLD, &status);
+		}
+		dur512 = MPI_Wtime() - start512;
+		bandwidth512 = 4 * sizeof(double) * 512 / dur512;
+		printf("Buffer size 512 bandwidth: %lf MB/s\n", bandwidth512);
+		buf = (double*)malloc(1024 * sizeof(double));
+		MPI_Barrier(MPI_COMM_WORLD);
+		start1024 = MPI_Wtime();
+		for (i = 0; i < ITERATIONS; i++) {
+			MPI_Send(buf, 1024, MPI_DOUBLE, 1, 1024, MPI_COMM_WORLD);
+			MPI_Recv(buf, 1024, MPI_DOUBLE, 1, 1024, MPI_COMM_WORLD, &status);
+			MPI_Send(buf, 1024, MPI_DOUBLE, 1, 1024, MPI_COMM_WORLD);
+			MPI_Recv(buf, 1024, MPI_DOUBLE, 1, 1024, MPI_COMM_WORLD, &status);
+		}
+		dur1024 = MPI_Wtime() - start1024;
+		bandwidth1024 = 4 * sizeof(double) * 1024 / dur1024;
+		printf("Buffer size 1024 bandwidth: %lf MB/s\n", bandwidth1024);
+		buf = (double*)malloc(2048 * sizeof(double));
+		MPI_Barrier(MPI_COMM_WORLD);
+		start2048 = MPI_Wtime();
+		for (i = 0; i < ITERATIONS; i++) {
+			MPI_Send(buf, 2048, MPI_DOUBLE, 1, 2048, MPI_COMM_WORLD);
+			MPI_Recv(buf, 2048, MPI_DOUBLE, 1, 2048, MPI_COMM_WORLD, &status);
+			MPI_Send(buf, 2048, MPI_DOUBLE, 1, 2048, MPI_COMM_WORLD);
+			MPI_Recv(buf, 2048, MPI_DOUBLE, 1, 2048, MPI_COMM_WORLD, &status);
+		}
+		dur2048 = MPI_Wtime() - start2048;
+		bandwidth2048 = 4 * sizeof(double) * 2048 / dur2048;
+		printf("Buffer size 2048 bandwidth: %lf MB/s\n", bandwidth2048);
+		MPI_Barrier(MPI_COMM_WORLD);
+		printf("Durations: %lf, %lf, %lf, %lf, %lf\n", dur32, dur256, dur512, dur1024, dur2048);
+	} else if (rank == 1) {
+		// Process 1
+		buf = (double*)malloc(32 * sizeof(double));
+		MPI_Barrier(MPI_COMM_WORLD);
+		for (i = 0; i < ITERATIONS; i++) {
+			MPI_Recv(buf, 32, MPI_DOUBLE, 0, 32, MPI_COMM_WORLD, &status);
+			MPI_Send(buf, 32, MPI_DOUBLE, 0, 32, MPI_COMM_WORLD);
+			MPI_Recv(buf, 32, MPI_DOUBLE, 0, 32, MPI_COMM_WORLD, &status);
+			MPI_Send(buf, 32, MPI_DOUBLE, 0, 32, MPI_COMM_WORLD);
+		}
+		buf = (double*)malloc(256 * sizeof(double));
+		MPI_Barrier(MPI_COMM_WORLD);
+		for (i = 0; i < ITERATIONS; i++) {
+			MPI_Recv(buf, 256, MPI_DOUBLE, 0, 256, MPI_COMM_WORLD, &status);
+			MPI_Send(buf, 256, MPI_DOUBLE, 0, 256, MPI_COMM_WORLD);
+			MPI_Recv(buf, 256, MPI_DOUBLE, 0, 256, MPI_COMM_WORLD, &status);
+			MPI_Send(buf, 256, MPI_DOUBLE, 0, 256, MPI_COMM_WORLD);
+		}
+		buf = (double*)malloc(512 * sizeof(double));
+		MPI_Barrier(MPI_COMM_WORLD);
+		for (i = 0; i < ITERATIONS; i++) {
+			MPI_Recv(buf, 512, MPI_DOUBLE, 0, 512, MPI_COMM_WORLD, &status);
+			MPI_Send(buf, 512, MPI_DOUBLE, 0, 512, MPI_COMM_WORLD);
+			MPI_Recv(buf, 512, MPI_DOUBLE, 0, 512, MPI_COMM_WORLD, &status);
+			MPI_Send(buf, 512, MPI_DOUBLE, 0, 512, MPI_COMM_WORLD);
+		}
+		buf = (double*)malloc(1024 * sizeof(double));
+		MPI_Barrier(MPI_COMM_WORLD);
+		for (i = 0; i < ITERATIONS; i++) {
+			MPI_Recv(buf, 1024, MPI_DOUBLE, 0, 1024, MPI_COMM_WORLD, &status);
+			MPI_Send(buf, 1024, MPI_DOUBLE, 0, 1024, MPI_COMM_WORLD);
+			MPI_Recv(buf, 1024, MPI_DOUBLE, 0, 1024, MPI_COMM_WORLD, &status);
+			MPI_Send(buf, 1024, MPI_DOUBLE, 0, 1024, MPI_COMM_WORLD);
+		}
+		buf = (double*)malloc(2048 * sizeof(double));
+		MPI_Barrier(MPI_COMM_WORLD);
+		for (i = 0; i < ITERATIONS; i++) {
+			MPI_Recv(buf, 2048, MPI_DOUBLE, 0, 2048, MPI_COMM_WORLD, &status);
+			MPI_Send(buf, 2048, MPI_DOUBLE, 0, 2048, MPI_COMM_WORLD);
+			MPI_Recv(buf, 2048, MPI_DOUBLE, 0, 2048, MPI_COMM_WORLD, &status);
+			MPI_Send(buf, 2048, MPI_DOUBLE, 0, 2048, MPI_COMM_WORLD);
+		}
+		MPI_Barrier(MPI_COMM_WORLD);
 	}
+	MPI_Finalize();
+	return 0;
 }
